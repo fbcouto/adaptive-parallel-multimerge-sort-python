@@ -11,8 +11,13 @@ By leveraging **PyO3** and **Maturin**, the core Rust engine is compiled into a 
 > 📌 **Note:** The mathematical foundations, dynamic heuristics, and exhaustive standalone benchmarks of the Multimerge engine are fully detailed and tested in the primary repository:
 >
 > 👉 **[Core Multimerge Sorting Repository](https://github.com/fbcouto/adaptive-parallel-multimerge-sort)**
+The core theoretical foundation of this parallel architecture is based on the original research and paper:
 
-The architecture implements a hybrid processing model based on the original *Multimerge* paper published in **PDPTA'11** (The 2011 International Conference on Parallel and Distributed Processing Techniques and Applications).
+- Title: Multimerge
+- Authors: Fernando B. Couto & Fábio S. Couto
+- Conference: PDPTA'11 — The 2011 International Conference on Parallel and Distributed Processing Techniques and Applications
+- Lecture Series: WorldComp'11 (The 2011 World Congress in Computer Science, Computer Engineering, and Applied Computing)
+- The architecture implements a hybrid processing model based on the original *Multimerge* paper published in **PDPTA'11** (The 2011 International Conference on Parallel and Distributed Processing Techniques and Applications).
 
 It modernizes those multi-merge paradigms by utilizing runtime entropy sampling (an Adaptive Oscillation Heuristic) and Rayon's work-stealing parallel scheduler.
 
