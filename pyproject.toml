@@ -1,0 +1,9 @@
+[build-system]
+requires = ["maturin>=1.5,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "rust_multimerge"
+version = "0.1.0"
+description = "Extension module for multimerge parallel sort"
+requires-python = ">=3.8"

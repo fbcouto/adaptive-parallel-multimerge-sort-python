@@ -1,0 +1,14 @@
+[package]
+name = "rust_multimerge"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "rust_multimerge"
+# "cdylib" gera a DLL e "Extension-module" avisa ao PyO3 que é uma extensão Python
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+rayon = "1.8" # Sua dependência do Rayon
+# Biblioteca oficial para criar bindings Python
+pyo3 = { version = "0.20", features = ["extension-module"] }
