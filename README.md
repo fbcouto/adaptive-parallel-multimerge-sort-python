@@ -95,13 +95,14 @@ The following metrics represent the real-world execution profiles captured direc
 
 | Vector Size | Scenario Profile | NumPy Nativo (C-Quicksort) | Multimerge (Rust Engine) | Performance Factor |
 |---|---|---|---|---|
-| 1,000,000 | ORDENADO | 14 ms | 0 ms | 🚀 Near-instant early exit |
-| 1,000,000 | INVERTIDO | 14 ms | 1 ms | 🚀 14.00x Faster |
-| 1,000,000 | SERRA (DENTES) | 11 ms | 12 ms | ⚙️ 1.09x Latency Parity |
-| 5,000,000 | ALEATÓRIO | 76 ms | 43 ms | 🚀 1.77x Faster |
-| 5,000,000 | ORDENADO | 77 ms | 2 ms | 🚀 38.50x Faster |
-| 5,000,000 | INVERTIDO | 81 ms | 5 ms | 🚀 16.20x Faster |
-| 5,000,000 | SERRA (DENTES) | 93 ms | 24 ms | 🚀 3.88x Faster |
+| 1,000,000 | RANDOM | 14 ms | 9 ms | 🚀 1.55x Faster |
+| 1,000,000 | SORTED | 14 ms | 0 ms | 🚀 Near-instant early exit |
+| 1,000,000 | REVERSED | 14 ms | 1 ms | 🚀 14.00x Faster |
+| 1,000,000 | SAWTOOTH PATTERN | 11 ms | 12 ms | ⚙️ 1.09x Latency Parity |
+| 5,000,000 | RANDOM | 76 ms | 43 ms | 🚀 1.77x Faster |
+| 5,000,000 | SORTED | 77 ms | 2 ms | 🚀 38.50x Faster |
+| 5,000,000 | REVERSED | 81 ms | 5 ms | 🚀 16.20x Faster |
+| 5,000,000 | SAWTOOTH PATTERN | 93 ms | 24 ms | 🚀 3.88x Faster |
 
 ---
 
@@ -112,14 +113,14 @@ The following metrics represent the real-world execution profiles captured direc
 
 | Vector Size | Scenario Profile | C-NumPy View (S6) | Multimerge (Rust Engine) | Performance Factor |
 |---|---|---|---|---|
-| 1,000,000 | ALEATÓRIO | 148 ms | 18 ms | 🚀 8.22x Faster |
-| 1,000,000 | ORDENADO | 51 ms | 7 ms | 🚀 7.29x Faster |
-| 1,000,000 | INVERTIDO | 85 ms | 9 ms | 🚀 9.44x Faster |
-| 1,000,000 | SERRA (DENTES) | 67 ms | 79 ms | ⚙️ 1.18x Latency Parity |
-| 5,000,000 | ALEATÓRIO | 814 ms | 94 ms | 🚀 8.66x Faster |
-| 5,000,000 | ORDENADO | 297 ms | 37 ms | 🚀 8.03x Faster |
-| 5,000,000 | INVERTIDO | 501 ms | 51 ms | 🚀 9.82x Faster |
-| 5,000,000 | SERRA (DENTES) | 394 ms | 94 ms | 🚀 4.19x Faster |
+| 1,000,000 | RANDOM | 148 ms | 18 ms | 🚀 8.22x Faster |
+| 1,000,000 | SORTED | 51 ms | 7 ms | 🚀 7.29x Faster |
+| 1,000,000 | REVERSED | 85 ms | 9 ms | 🚀 9.44x Faster |
+| 1,000,000 | SAWTOOTH PATTERN | 67 ms | 79 ms | ⚙️ 1.18x Latency Parity |
+| 5,000,000 | RANDOM | 814 ms | 94 ms | 🚀 8.66x Faster |
+| 5,000,000 | SORTED | 297 ms | 37 ms | 🚀 8.03x Faster |
+| 5,000,000 | REVERSED  | 501 ms | 51 ms | 🚀 9.82x Faster |
+| 5,000,000 | SAWTOOTH PATTERN | 394 ms | 94 ms | 🚀 4.19x Faster |
 
 ---
 
